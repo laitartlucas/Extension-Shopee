@@ -1,4 +1,5 @@
 🛒 Shopee Preenchedor de Endereço — Extensão Chrome
+
 Extensão para Google Chrome que preenche automaticamente o formulário de endereço na Shopee a partir de um link com os dados do cliente. Desenvolvida para agilizar o processo de compra no dropshipping, eliminando a digitação manual de nome, telefone, CEP, rua, número, bairro e complemento.
 
 ✨ Como funciona
