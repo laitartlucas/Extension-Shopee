@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Shopee Preenchedor de Endereço",
+  "version": "1.2",
+  "description": "Preenche o endereço na Shopee automaticamente com os dados do cliente",
+  "permissions": ["storage", "activeTab", "scripting", "tabs"],
+  "host_permissions": [
+    "https://shopee.com.br/*",
+    "https://avitaflex.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Preencher Endereço Shopee"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://shopee.com.br/*"],
+      "js": ["content.js"]
+    },
+    {
+      "matches": ["https://avitaflex.com/envio/*"],
+      "js": ["content_avitaflex.js"]
+    }
+  ]
+}
